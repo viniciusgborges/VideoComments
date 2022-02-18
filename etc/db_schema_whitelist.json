@@ -1,0 +1,14 @@
+{
+    "vb_comments": {
+        "column": {
+            "comment_id": true,
+            "product_id": true,
+            "customer_id": true,
+            "comment": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

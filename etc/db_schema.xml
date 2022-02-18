@@ -1,0 +1,15 @@
+<?xml version="1.1"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="video_comments" resource="default" engine="innodb" comment="Comentários">
+        <column xsi:type="int" name="comment_id" unsigned="true" nullable="false" identity="true"
+                comment="Comment entity ID"/>
+        <column name="customer_id" comment="Customer id" xsi:type="int" unsigned="true" identity="false" nullable="false"/>
+        <column name="comment" comment="Comment" xsi:type="text" nullable="false"/>
+        <column name="created_at" comment="Creation date" xsi:type="datetime" nullable="false" default="CURRENT_TIMESTAMP"/>
+        <column name="updated_at" comment="Creation date" xsi:type="datetime" nullable="false" default="CURRENT_TIMESTAMP" on_update="true"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="comment_id"/>
+        </constraint>
+    </table>
+</schema>
