@@ -1,7 +1,7 @@
 <?xml version="1.1"?>
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-    <table name="video_comments" resource="default" engine="innodb" comment="Comentários">
+    <table name="vb_comments" resource="default" engine="innodb" comment="Comentários">
         <column xsi:type="int" name="comment_id" unsigned="true" nullable="false" identity="true"
                 comment="Comment entity ID"/>
         <column name="customer_id" comment="Customer id" xsi:type="int" unsigned="true" identity="false" nullable="false"/>

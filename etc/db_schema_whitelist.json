@@ -2,10 +2,10 @@
     "vb_comments": {
         "column": {
             "comment_id": true,
-            "product_id": true,
             "customer_id": true,
             "comment": true,
-            "created_at": true
+            "created_at": true,
+            "updated_at": true
         },
         "constraint": {
             "PRIMARY": true
